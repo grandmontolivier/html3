@@ -1,0 +1,75 @@
+/* Réinitialisation de quelques styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Style de la barre de navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+    
+.banner {
+      position: relative;
+      background: url('../Assets/Banner/Banner2.jpg') no-repeat center center;
+      background-size: cover; /* Change from cover to contain */
+      height: 100vh; /* Full height */
+      color: white; /* Text color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    @media (max-width: 576px) {
+      .banner {
+       background: url('../Assets/Banner/BannerMobile.jpg') no-repeat center center;
+        background-size: cover; /* Change back to cover on smaller screens */
+        height: 100vh; /* Adjust the height for mobile screens */
+      }
+    }
+
+
+
+
+
+/* Style du pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
